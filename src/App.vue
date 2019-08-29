@@ -13,9 +13,9 @@
 <script>
 import Vue from 'vue'
 import axios from 'axios'
-import HTTP from "./http.js";
+// import HTTP from "./http.js";
 // 设置默认服务器地址
-HTTP.install(Vue, axios)
+// HTTP.install(Vue, axios)
 import NavBottom from './components/sub/nav-bottom.vue' 
 export default {
 	name: 'App',
