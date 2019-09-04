@@ -263,8 +263,8 @@ export default {
         background: #fff;
     }
     .select{
-        border-color: #00c3f5;
-        color: #00c3f5;
+        border-color: #00c3f5 !important;
+        color: #00c3f5 !important;
     }
     #app .chose-popup .chose-popup-join-buy{
         width: 50%;
