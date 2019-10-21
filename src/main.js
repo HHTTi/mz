@@ -6,8 +6,10 @@ import router from './router'
 //引入axios
 import axios from 'axios'
 axios.defaults.withCredentials = true
+
+axios.defaults.baseURL = 'https://hhtti.cn'
+
 Vue.prototype.$axios = axios
-// axios.defaults.baseURl =  'http://127.0.0.1:3000'
 
 //vuex
 import vuex from 'vuex'

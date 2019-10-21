@@ -1,6 +1,6 @@
 export default {
       install: function (Vue, axios) {
-        axios.defaults.baseURL = 'http://139.155.69.31:3000/'
+        axios.defaults.baseURL = 'http://hhtti.cn/'
         axios.defaults.headers['Content-Type'] = 'application/x-www-form-urlencoded;charset=UTF-8';  //此处是增加的代码，设置请求头的类型
         axios.defaults.headers.post['Content-Type'] = 'application/json;charset=UTF-8';
         // 将axios挂载到Vue原型上
