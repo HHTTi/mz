@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
 import HomeComponents from '../components/home.vue'
 import GoodsList from '../components/Goods/GoodsList.vue'
 import NewsList from '../components/discover/newsList.vue'
@@ -14,16 +13,16 @@ Vue.use(Router)
 
 export default new Router({
   routes: [
-    {path:"/",component: HomeComponents},
-    {path:'/home',component:HomeComponents},
-    {path:'/goodslist',component:GoodsList},
-    {path:'/newslist',component:NewsList},
-    {path:'/shopcart',component:ShopCart},
-    {path:'/me',component:About},
-    {path:'/home/goodsinfo/:id',component:GoodsInfo},
-    {path:'/login',component:Login},
-    {path:'/register',component:Register},
+    { path: "/", component: HomeComponents },
+    { path: '/home', component: HomeComponents },
+    { path: '/goodslist', component: GoodsList },
+    { path: '/newslist', component: NewsList },
+    { path: '/shopcart', component: ShopCart },
+    { path: '/me', component: About },
+    { path: '/home/goodsinfo/:id', component: GoodsInfo },
+    { path: '/login', component: Login },
+    { path: '/register', component: Register },
 
-    {path:'/*',component:err}
+    { path: '/*', component: err }
   ]
 })

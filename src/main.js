@@ -15,33 +15,33 @@ Vue.prototype.$axios = axios
 import vuex from 'vuex'
 Vue.use(vuex)
 var store = new vuex.Store({
-  state:{
-    shopCart:0 ,
-    isLogin :false,
-    uname:'点击登陆'
+  state: {
+    shopCart: 0,
+    isLogin: false,
+    uname: '点击登陆'
   },
-  mutations:{
-    changeShopCart(state,c){
+  mutations: {
+    changeShopCart(state, c) {
       state.shopCart = c;
     },
-    addShopCart(state,c){
+    addShopCart(state, c) {
       state.shopCart += c;
     },
-    changeIsLogin(state,bool){
+    changeIsLogin(state, bool) {
       state.isLogin = bool
     },
-    changeUname(state,str){
+    changeUname(state, str) {
       state.uname = str
     }
   },
-  getters:{
-    selectShopCart:function(state){
+  getters: {
+    selectShopCart: function (state) {
       return state.shopCart
     },
-    selectIsLogin:function(state){
+    selectIsLogin: function (state) {
       return state.isLogin
     },
-    selectUname:function(state){
+    selectUname: function (state) {
       return state.uname
     }
 
